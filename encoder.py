@@ -77,8 +77,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input_path", help="path to input file")
     parser.add_argument("output_path", help="path to output file")
-    parser.add_argument("-v", "--verbose", help="Write results to std::out as well", action="store_true")
-    parser.add_argument("-d", "--decode", help="Switch from Encoding mode (default) to Decoding mode.", action="store_true")
+    parser.add_argument("-v", "--verbose", help="write results to std::out as well", action="store_true")
+    parser.add_argument("-d", "--decode", help="switch from Encoding mode (default) to Decoding mode.", action="store_true")
     args = parser.parse_args()
 
     e = encoder_lz78(256, "")
